@@ -11,6 +11,7 @@ public class OneServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("servlet执行");
         System.out.println("myGithub");
+        System.out.println("冲突");
         String name = request.getParameter("name");
         request.setAttribute("name",name);
         request.getRequestDispatcher("/result.jsp").forward(request,response);
