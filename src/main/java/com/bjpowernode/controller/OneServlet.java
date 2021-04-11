@@ -12,6 +12,7 @@ public class OneServlet extends HttpServlet {
         System.out.println("servlet执行");
         System.out.println("myGithub");
         System.out.println("菜鸟不及时拉取就更新，产生冲突");
+        System.out.println("冲突");
         String name = request.getParameter("name");
         request.setAttribute("name",name);
         request.getRequestDispatcher("/result.jsp").forward(request,response);
